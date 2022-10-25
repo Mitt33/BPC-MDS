@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Empty Title</title>
+</head>
+<body>
+    <h2>Prehravani videa: Martin Svoboda</h2>
+
+    <p th:if="noUrl"> nebyla zanadana url videa</p>
+
+    <video th:width="${width}" controls th:autoplay = "${autoplay}" th:muted = "${muted}" poster="https://raw.githubusercontent.com/ENeMy235/MDS/main/Screen2.jpg">
+        <source th:src="${url}" type="video/mp4">
+
+    </video>
+
+</body>
+</html>
