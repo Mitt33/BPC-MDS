@@ -5,4 +5,4 @@
 4) Streaming from URL
 5) Adaptive Streaming
 6) Video library
-7) - project - subject recap
+7) Project - subject recap
