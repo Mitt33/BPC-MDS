@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Project</title>
+</head>
+<body>
+<h2>Collection of streams</h2>
+
+
+<table class="table">
+  <thead class = "thead-light">
+  <tr>
+    <th class="text-left">Videos</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="movie : ${libraryA}">
+    <td><a th:href="@{'player/'+${movie}}" th:text="${movie}">
+    </a></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
